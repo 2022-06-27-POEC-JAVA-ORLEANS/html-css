@@ -3,7 +3,7 @@
 ## Objectifs du TP
 
 1. Travailler à plusieurs sur le même dépôt git.
-2. Créez des pages web responsives en utilisant les langages HTML/CSS.
+2. Créez une page web responsive en utilisant les langages *HTML* et *CSS*.
 
 ## Contexte globale du TP
 
@@ -13,16 +13,16 @@ Reproduire les pages web à partir des maquettes et en respectant les exigences 
 
 1. Un membre du groupe, crée un projet GitHub et invite les autres membres du groupe à collaborer sur ce projet. 
 2. **Tous les membres du groupe travaillent ensemble pour créer rapidement *uniquement le HTML* qui sera la base du TP**
-3. Après avoir fini le HTML en groupe, vous devez faire la mise en page de la page Web pour les versions Desktop (bureau), mobile et tablette.
+3. Après avoir fini le *HTML* en groupe, vous devez faire la mise en page de la page Web pour les versions Desktop (bureau), mobile et tablette.
 - Pour les mises en page, le groupe s'auto-organise pour assigner les tâches aux membres du groupe.
 - Vous pouvez être amené à travailler seul ou en pair-programming pour satisfaire la tâche.
 
 ### Ressources
 
-- [Lorem Ipsum](https://www.lipsum.com/) (texte de remplissage à copier/coller sur votre page HTML)
-- Images gratuites et libre de droit à condition de citer l'auteur [unsplash](https://unsplash.com/)
-- Validation du code HTML à l'aide de [HTML Validator]() (copiez/collez votre code HTML)
-- Validation du code CSS à l'aide de [CSS Validator]() (copiez/collez votre code CSS)
+- [Lorem Ipsum](https://www.lipsum.com/) (texte de remplissage à copier/coller sur votre page HTML).
+- Images gratuites et libre de droit à condition de citer l'auteur [unsplash](https://unsplash.com/).
+- Validation du code HTML à l'aide de [HTML Validator](https://validator.w3.org/#validate_by_input) (copiez/collez votre code *HTML*).
+- Validation du code CSS à l'aide de [CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) (copiez/collez votre code *CSS*).
 
 ### Exigences techniques
 
@@ -59,10 +59,13 @@ Reproduire les pages web à partir des maquettes et en respectant les exigences 
 4. Un label "saisir du contenu" et un champ *textarea*.
 5. Un label "saisir la taille du titre" et un champ de type *number*, taille comprise entre *36px* et *72px*, utilisez les attributs *min="36"* et *max="72"* sur le champ.
 
-6. Un label "saisir la taille du texte" et un champ de type number, taille comprise entre *12px* et *36px*.
-7. Un label "alignement du titre" et une sélection d'élément avec les options droite, gauche, centré et justifié.
-8. Un label "alignement du texte" avec un sélection d'élément ayant les options droite, gauche, centré et justifié.
-9. Un label "police du texte" avec une sélection  de fonts (polices) avec les options arial, sans-serif, serif, roboto, monospace, cursive, fantasy. 
+6. Un label "saisir la taille du texte" et un champ de type *number*, taille comprise entre *12px* et *36px*.
+7. Un label "alignement du titre" et une sélection d'élément avec les options *droite*, *gauche*, *centré* et *justifié*.
+8. Un label "alignement du texte" avec un sélection d'élément ayant les options *droite*, *gauche*, *centré* et *justifié*.
+9. Un label "police du texte" avec une sélection  de fonts (polices) avec les options *arial*, *sans-serif*, *serif*, *roboto*, *monospace*, *cursive*, *fantasy*. 
+10. Un champ texte.
+11. Un bouton "changer la photo".
+12. Un paragraphe "Agrandir/rétrécir l'ensemble" et 2 boutons "A+" et "A-".
 
 #### Maquette de la page version desktop (bureau) pour la branche feature/css-desktop
 
