@@ -1,0 +1,58 @@
+main {
+    margin: 10px auto;
+    width: 600px;
+}
+
+h1 {
+    text-align: center;
+    color: #ff5b6b;
+}
+
+section{
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 10px;
+    color:#fff;
+}
+
+section:nth-child(2n+1){
+    background-color: #001f33;
+}
+
+section:nth-child(2n){
+    background-color: #007ccc;
+}
+
+h2 {
+    padding: 10px;
+    text-decoration: underline;
+}
+
+/*
+Propriétées qui s'appliquent 
+uniquement sur les écrans qui ont au maximum 579px
+*/
+@media screen and (max-width: 579px) {
+    body{
+        background-color: orange;
+    }
+    
+    main {
+        width: 100%;
+        text-align: center;
+        font-size: 3rem;
+    }
+    
+    h2 {
+        margin: 0;
+    }
+    
+    section {
+        display: block;
+        margin: 10px auto;
+    }
+    
+    ol {
+        margin: 0;
+    }
+}
