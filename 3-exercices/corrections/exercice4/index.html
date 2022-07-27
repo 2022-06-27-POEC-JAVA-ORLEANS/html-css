@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,115 +7,121 @@
     <title>Formulaire inscription des étudiants à l'université</title>
 </head>
 <body>
+    <p>hello <span>world</span></p>
     <h1>Formulaire d'inscription</h1>
     <!--
         Attribut action permet d'indiquer l'endroit (fichier) ou seront envoyés 
         les données du formulaire pour être traité
     -->
-    <form action="#">
-        <label for="lastname">Nom</label>
-        <input type="text" name="lastname" id="lastname">
-        <br>
-        <!--
-          Éviter les br, utiliser les propriétés CSS à la place pour avoir plus de maitrise, 
-          ici dans la progression pédagogique vous n'avez pas encore connaissance du CSS
-        -->
-        <label for="firstname">Prénom</label>
-        <input type="text" name="firstname" id="firstname">
-        <br>
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email">
-        <br>
-        <label for="mobile">Numéro de téléphone</label>
-        <!--attribut pattern prend une expression régulière (motif, modèle de ce que l'on souhaite avoir)-->
-        <!--attribut maxlength permet de pouvoir déterminer le nombre maximum de caractère à saisir pour un champ-->
-        <input type="tel" name="mobile" id="mobile" pattern="[0][6-7][0-9]{8}" placeholder="sans espace" maxlength="10">
-        <br>
-        <label for="birthday">Date de naissance</label>
-        <input type="date" name="birthday" id="birthday">
-        <br>
-        <label for="country">Pays de naissance</label>
-        <!--optpgroup permet de regrouper les options dans des groupes-->
-        <select name="country" id="country">
-            <optgroup label="Europe">
-                <option value="french">France</option>
-                <option value="italy">Italie</option>
-                <option value="spain">Espagne</option>
-            </optgroup>
-            <optgroup label="Afrique">
-                <option value="senegal">Sénégal</option>
-                <option value="maroc">Maroc</option>
-                <option value="congo">Congo</option>
-            </optgroup>
-            <optgroup label="Amérique">
-                <option value="canada">Canada</option>
-                <option value="brasil">Brésil</option>
-                <option value="argentina">Argentine</option>
-            </optgroup>
-            <optgroup label="Asie orientale">
-                <option value="iran">Iran</option>
-                <option value="syria">Syrie</option>
-                <option value="saudi arabia">Arabie saoudite</option>
-            </optgroup>
-            <optgroup label="Asie Pacifique">
-                <option value="china">China</option>
-                <option value="japan">Japon</option>
-                <option value="Vietnam">Vietnam</option>
-            </optgroup>
-        </select>
-        <br>
-        <label for="average">Moyenne obtenu au BAC</label>
-        <!-- attribut min = valeur minimale acceptée par le navigateur pour un champ de type number et max = valeur maximale-->
-        <input type="number" name="average" id="average" min="0" max="20">
-        <br><br>
-        <fieldset>
-            <legend>Formation</legend>
-            <input type="checkbox" name="secondary-certificate" id="secondary-certificate">
-            <label for="secondary-certificate">Brevet des collèges</label>
+    <div>
+        <form method="get">
+            <div>
+                <label for="lastname">Nom</label>
+                <input type="text" name="lastname" id="lastname">
+                <br>
+            </div>
+            <!--
+              Éviter les br, utiliser les propriétés CSS à la place pour avoir plus de maitrise, 
+              ici dans la progression pédagogique vous n'avez pas encore connaissance du CSS
+            -->
+            <label for="firstname">Prénom</label>
+            <input type="text" name="firstname" id="firstname">
             <br>
-            <input type="checkbox" name="bachelor" id="bachelor">
-            <label for="bachelor">Bac</label>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
             <br>
-            <input type="checkbox" name="certificate" id="certificate">
-            <label for="certificate">BTS</label>
+            <label for="mobile">Numéro de téléphone</label>
+            <!--attribut pattern prend une expression régulière (motif, modèle de ce que l'on souhaite avoir)-->
+            <!--attribut maxlength permet de pouvoir déterminer le nombre maximum de caractère à saisir pour un champ-->
+            <input type="tel" name="mobile" id="mobile" pattern="[0][6-7][0-9]{8}" placeholder="sans espace" maxlength="10">
             <br>
-            <input type="checkbox" name="university degree" id="university-degree">
-            <label for="university-degree">DUT</label>
+            <label for="birthday">Date de naissance</label>
+            <input type="date" name="birthday" id="birthday">
             <br>
-            <input type="checkbox" name="license" id="license">
-            <label for="license">Licence</label>
+            <label for="country">Pays de naissance</label>
+            <!--optpgroup permet de regrouper les options dans des groupes-->
+            <select name="country" id="country">
+                <optgroup label="Europe">
+                    <option value="french">France</option>
+                    <option value="it">Italie</option>
+                    <option value="spain">Espagne</option>
+                </optgroup>
+                <optgroup label="Afrique">
+                    <option value="senegal">Sénégal</option>
+                    <option value="maroc">Maroc</option>
+                    <option value="congo">Congo</option>
+                </optgroup>
+                <optgroup label="Amérique">
+                    <option value="canada">Canada</option>
+                    <option value="brasil">Brésil</option>
+                    <option value="argentina">Argentine</option>
+                </optgroup>
+                <optgroup label="Asie orientale">
+                    <option value="iran">Iran</option>
+                    <option value="syria">Syrie</option>
+                    <option value="saudi arabia">Arabie saoudite</option>
+                </optgroup>
+                <optgroup label="Asie Pacifique">
+                    <option value="china">China</option>
+                    <option value="japan">Japon</option>
+                    <option value="Vietnam">Vietnam</option>
+                </optgroup>
+            </select>
             <br>
-            <input type="checkbox" name="master" id="master">
-            <label for="bachelor">Master</label>
+            <label for="average">Moyenne obtenu au BAC</label>
+            <!-- attribut min = valeur minimale acceptée par le navigateur pour un champ de type number et max = valeur maximale-->
+            <input type="number" name="average" id="average" min="0" max="20">
+            <br><br>
+            <fieldset>
+                <legend>Formation</legend>
+                <input type="checkbox" name="secondary-certificate" id="secondary-certificate">
+                <label for="secondary-certificate">Brevet des collèges</label>
+                <br>
+                <!-- attribut checked permet de cocher la case au chargement de la page -->
+                <input type="checkbox" name="bachelor" id="bachelor" checked>
+                <label for="bachelor">Bac</label>
+                <br>
+                <input type="checkbox" name="certificate" id="certificate">
+                <label for="certificate">BTS</label>
+                <br>
+                <input type="checkbox" name="university degree" id="university-degree">
+                <label for="university-degree">DUT</label>
+                <br>
+                <input type="checkbox" name="license" id="license">
+                <label for="license">Licence</label>
+                <br>
+                <input type="checkbox" name="master" id="master">
+                <label for="bachelor">Master</label>
+                <br>
+                <input type="checkbox" name="doctorat" id="doctorat">
+                <label for="bachelor">Doctorat</label>
+                <br>
+            </fieldset>
             <br>
-            <input type="checkbox" name="doctorat" id="doctorat">
-            <label for="bachelor">Doctorat</label>
+            <p>Langue maternelle</p>
+            <input type="radio" name="mother-lang" id="fr">
+            <label for="fr">Français</label>
+            <input type="radio" name="mother-lang" id="ar">
+            <label for="ar">Arabe</label>
+            <input type="radio" name="mother-lang" id="it">
+            <label for="it">italien</label>
+            <input type="radio" name="mother-lang" id="swa" checked>
+            <label for="swa">Swahili</label>
+            <br><br>
+            <textarea name="motivations" id="motivations" cols="30" rows="10" placeholder="Vos motivations"></textarea>
+            <br><br>
+            <fieldset>
+                <legend>BONUS</legend>
+                <label for="favorite-color">Couleur préferée</label>
+                <input type="color" name="favorite-color" id="favorite-color">
+                <input type="hidden" name="id" value="150">
+                <br>
+                <label for="en">Niveau en anglais</label>
+                <input type="range" name="en" id="en" min="0" max="100">
+            </fieldset>
             <br>
-        </fieldset>
-        <br>
-        <p>Langue maternelle</p>
-        <input type="radio" name="mother-lang" id="fr">
-        <label for="fr">Français</label>
-        <input type="radio" name="mother-lang" id="ar">
-        <label for="ar">Arabe</label>
-        <input type="radio" name="mother-lang" id="it">
-        <label for="it">italien</label>
-        <input type="radio" name="mother-lang" id="swa">
-        <label for="swa">Swahili</label>
-        <br><br>
-        <textarea name="motivations" id="motivations" cols="30" rows="10" placeholder="Vos motivations"></textarea>
-        <br><br>
-        <fieldset>
-            <legend>BONUS</legend>
-            <label for="favorite-color">Couleur préferée</label>
-            <input type="color" name="favorite-color" id="favorite-color">
-            <input type="hidden" name="id" value="150">
-            <br>
-            <label for="en">Niveau en anglais</label>
-            <input type="range" name="en" id="en" min="0" max="100">
-        </fieldset>
-        <br>
-        <input type="submit" value="S'inscrire">
-    </form>
+            <input type="submit" value="S'inscrire">
+        </form>
+    </div>
 </body>
 </html>

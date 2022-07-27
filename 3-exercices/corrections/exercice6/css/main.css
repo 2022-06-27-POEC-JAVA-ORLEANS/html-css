@@ -1,29 +1,29 @@
 main {
-    margin: 10px auto;
-    width: 600px;
+  display: flex;
+  justify-content: center;
 }
 
 h1 {
-    text-align: center;
-    color: #ff5b6b;
+  text-align: center;
+  color: #ff5b6b;
 }
 
-section{
-    display: inline-block;
-    border: 1px solid #ccc;
-    padding: 10px;
-    color:#fff;
+section {
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #fff;
 }
 
-section:nth-child(2n+1){
-    background-color: #001f33;
+section:nth-child(2n + 1) {
+  background-color: #001f33;
 }
 
-section:nth-child(2n){
-    background-color: #007ccc;
+section:nth-child(2n) {
+  background-color: #007ccc;
 }
 
 h2 {
-    padding: 10px;
-    text-decoration: underline;
+  padding: 10px;
+  text-decoration: underline;
 }
