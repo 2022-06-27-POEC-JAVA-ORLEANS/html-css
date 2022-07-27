@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire</title>
+</head>
+<body>
+  <form method="GET" action="">
+    <!-- 
+      method
+        methode mode d'envoi des données du formulaire, par défaut si vous ne mettez rien c'est GET la valeur
+        GET = les infos seront visibles au niveau de l'URL à la soumission du formulaire
+        POST = Non visible au niveau du formulaire
+      action
+        côté serveur, l'endroit ou seront envoyés les données et ou se fera le traitement
+      -->
+      <label for="lastname">Nom</label>
+      <!-- 
+        l'attribut for du label et l'attribut id d'un input sont liées
+        s'ils ont la même valeur, le fait de cliquer sur le label, mettra le focus sur l'input concerné
+      -->
+      <input type="text" name="lastname" id="lastname" minlength="5" maxlength="20" required>
+      <!-- 
+        Le type permet de spécifié le type de champs text, number, password, color, date etc..
+        attribut required = champ obligatoire, le navigateur empeche la soumission si le champ est vide
+        attribut name nom du champ qui sera récupéré au niveau du back-end pour faire l'association entre ce champ et la valeur saisit par User
+        attribut minlength = nombre de caractère minimum que l'User doit saisir
+        maxlength = nb caractère maximum
+      -->
+      <label>Prénom</label>
+      <input type="text" name="firstname" disabled>
+      <!-- attribut disabled champs désactivé, l'utilisateur ne peut pas saisir de valeur dessus-->
+      <label>Age</label>
+      <input type="number" name="age" placeholder="Saisir votre age" min="18" max="65">
+      <!-- 
+        attribut placeholder = texte affiché à 'lintérieur du champ pour donner des indications au User
+        Ce n'est pas une valeur par défaut, dès que le User a le focus sur le champ et commence à saisir du contenu, le placeholder disparait. 
+        min = nombre minimum
+        max = nombre max
+      -->
+      <label>Couleur préférée</label>
+      <input type="color" name="color">
+      <label>Pays</label>
+      <select name="country">
+        <!--
+          Entre les balises option, l'information est affiché au user
+          par contre l'attribut value est la valeur qui sera envoyé du côté serveur
+          par exemple l'utilisateur verra France par contre lors de l'envoie des données le serveur enverra fr
+        -->
+        <option value="fr">France</option>
+        <option value="germ">Allemagne</option>
+        <option value="it">Italie</option>
+      </select>
+      <textarea></textarea><!--champ pour saisir un long texte avec des sauts de ligne != input type text ou on saisit une information dont la longueur est relativement petite-->
+      <input type="submit" value="Envoyer"><!--Bouton de soumission du formulaire-->
+  </form>
+</body>
+</html>
