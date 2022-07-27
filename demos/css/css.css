@@ -8,12 +8,19 @@ selecteur {
   propriété: valeur;
 }
 */
-.red {
+.red { 
+  /* 
+    . permet de sélectionner une class en html par exemple ici c'est tous les éléments dont 
+    on a donné l'attribut class="red" 
+  */
   color:red;
   text-align: center;
 }
 
 #p2 {
+  /* 
+    # permet de sélectionner l'unique élément de notre page qui a l'attribut id="p2" 
+  */
   color: blue;
 }
 
