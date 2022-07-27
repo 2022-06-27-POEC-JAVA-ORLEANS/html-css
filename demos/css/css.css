@@ -1,0 +1,27 @@
+
+/*
+Commentaire en CSS
+*/
+
+/*
+selecteur {
+  propriété: valeur;
+}
+*/
+.red {
+  color:red;
+  text-align: center;
+}
+
+#p2 {
+  color: blue;
+}
+
+table, td, th {
+  border: 1px solid black;
+}
+
+img {
+  width: 50%; /* plusieurs unités possible px, cm etc.*/
+  height: 50%;
+}

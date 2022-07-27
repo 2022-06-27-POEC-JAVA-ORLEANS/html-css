@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+  <h1>Mon titre</h1> <!--élément de type block, occupe toute l'espace, on peut modifier ses dimensions (largeur et hauteur)-->
+  <p class="red"><!-- attribut class est utilisé pour appliquer le même style aux éléments ayant la même class (valeur de l'attribut class)-->
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+  </p>
+  <p id="p2"> <!-- p est de type block-->
+    <!-- 
+      attribut id, valeur unique pour identifier et appliquer un style spécifique à un seul élément
+      Je peux avoir plusieurs id dans ma page, mais je ne peux pas avoir 2 id qui ont la même valeur
+    -->
+    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+  <p class="red">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, </p>
+  <table>
+    <thead>
+      <tr>
+        <th>Numéro de commande</th>
+        <th>État</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>CMD01</td>
+        <td>Payé</td>
+      </tr>
+
+      <tr>
+        <td>CMD02</td>
+        <td>Payé</td>
+      </tr>
+
+      <tr>
+        <td>CMD03</td>
+        <td>Non Payé</td>
+      </tr>
+
+      <tr>
+        <td>CMD04</td>
+        <td>En attente de paiement</td>
+      </tr>
+    </tbody>
+  </table>
+  <!--img est de type inline-block il occupe l'espace qu'il lui faut, par contre je peux modifier ses dimensions (largeur et hauteur)-->
+  <img src="../3-exercices/corrections/exercice3/img/crm.jpg" alt="image crm">
+  <a class="red" href="google.fr">Google</a>
+  <a class="red" href="facebook.fr">FB</a>
+</body>
+</html>
