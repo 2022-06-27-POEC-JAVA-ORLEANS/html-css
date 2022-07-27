@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP HTML/CSS responsive design</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <main>
+        <h1>Page web responsive design</h1>
+        <section>
+            <h2>Contenu principal</h2>
+            <article>
+                <h3 id="title">Titre de l'article</h3>
+                <div id="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, enim. Aliquid quidem quia esse ratione
+                    possimus tempora culpa voluptas reiciendis neque id facilis, nemo, quam minus officiis maiores,
+                    pariatur quo?
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                    Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, 
+                    and going through the cites of the word in classical literature, discovered the undoubtable source. 
+                    Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.
+                    This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
+                    Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
+                    Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                </div>
+                <div id="gallery">
+                    <figure>
+                        <figcaption>Image d'un chien avec des lunettes</figcaption>
+                        <img src="img/dog.jpg" alt="dog using a laptop">
+                    </figure>
+                </div>
+            </article>
+            <aside>
+                <h3>Formulaire</h3>
+                <form>
+                    <label for="bgColor">Changer la couleur de fond</label>
+                    <input type="color" name="bgColor" id="bgColor">
+                    <label for="titleColor">Changer la couleur du titre</label>
+                    <input type="color" name="titleColor" id="titleColor">
+                    <label for="textColor">Changer la couleur du texte</label>
+                    <input type="color" name="textColor" id="textColor">
+                    <label for="mainText">Saisir du contenu</label>
+                    <textarea id="mainText" name="mainText" placeholder="Saisissez votre contenu à ajouter à la place du contenu principal"></textarea>
+                    <label for="titleFontSize">Saisir la taille du titre</label>
+                    <input type="number" name="titleFontSize" id="titleFontSize" placeholder="Taille du titre entre 36 et 72 px" min="36" max="72">
+                    <label for="textFontSize">Saisir la taille du texte</label>
+                    <input type="number" name="textFontSize" id="textFontSize" placeholder="Taille du texte entre 12 et 36 px" min="12" max="36">
+                    <label for="titleAlign">Alignement du titre</label>
+                    <select name="titleAlign" id="titleAlign">
+                        <option value="-1" selected disabled>Choisir l'alignement du titre</option>
+                        <option value="left">gauche</option>
+                        <option value="center">centré</option>
+                        <option value="right">droite</option>
+                        <option value="justify">justifié</option>
+                    </select>
+                    <label for="textAlign">Alignement du texte</label>
+                    <select name="textAlign" id="textAlign">
+                        <option value="-1" selected disabled>Choisir l'alignement du texte</option>
+                        <option value="left">gauche</option>
+                        <option value="center">centré</option>
+                        <option value="right">droite</option>
+                        <option value="justify">justifié</option>
+                    </select>
+                    <label for="titleFont">Police titre</label>
+                    <select name="titleFont" id="titleFont">
+                        <option value="-1" selected disabled>Choisir une font pour le titre</option>
+                    </select>
+                    <label for="textFont">Police du texte</label>
+                    <select name="textFont" id="textFont">
+                        <option value="-1" selected disabled>Choisir une font pour le texte</option>
+                    </select>
+                    <input type="url" placeholder="source image local ou URL">
+                    <button id="photo" type="button">Changer la photo</button>
+                    <span>Agrandir/rétrécir l'ensemble
+                        <button id="zoom" type="button">A+</button>
+                        <button id="unZoom" type="button">A-</button>
+                    </span>
+                </form>
+            </aside>
+        </section>
+        <footer>
+            <small>
+                Photo by <a href="https://unsplash.com/@cookiethepom?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Cookie the Pom</a> on <a href="https://unsplash.com/s/photos/computer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </small>
+        </footer>
+    </main>
+</body>
+
+</html>

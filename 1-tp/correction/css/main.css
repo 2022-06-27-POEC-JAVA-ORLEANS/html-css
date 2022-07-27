@@ -1,0 +1,148 @@
+
+/* GLOBAL */
+article,
+aside {
+    display: inline-block;
+    border: 2px solid black;
+    box-sizing: content-box;
+}
+
+article {
+    width: calc(75% - 20px);
+    padding: 10px;
+}
+
+#text {
+    text-align: justify;
+}
+
+aside {
+    margin-left: 10px;
+    width: calc(25% - 32px);
+    vertical-align: top;
+    padding: 5px;
+    position: sticky;
+    top: 10px;
+}
+
+figure {
+    margin:0;
+}
+
+figcaption {
+    margin: 5px 0;
+}
+
+aside form>* {
+    display: block;
+    margin: 5px 0px;
+}
+
+input[type="url"],
+input[type="number"],
+textarea {
+    width: 80%;
+}
+
+article img {
+    width: 100%;
+}
+
+/* MOBILE AND TABLET */
+@media screen and (max-width: 798px) {
+    textarea {
+        width: 100%;
+        min-height: 150px;
+        resize: vertical;
+    }
+
+    input,
+    select,
+    textarea,
+    button {
+        height: 2.5rem;
+        text-align: center;
+    }
+
+    button {
+        vertical-align: middle;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
+
+/* ONLY MOBILE */
+@media screen and (max-width: 576px) {
+    body {
+        background-color: lightblue;
+        max-width: 576px;
+    }
+    h2 {
+        text-align: center;
+    }
+    aside,
+    article{
+        width: 95%;
+        margin: 10px 0;
+        text-align: left;
+        font-size: 1.2rem;
+    }
+    article {
+        line-height: 2rem;
+    }
+
+    img {
+        width: 50%;
+        margin: 2px auto;
+        display: block;
+    }
+
+    aside {
+        border: none;
+    }
+    
+    #photo,
+    input[type="url"] {
+        display: inline-block;
+    }
+
+    #photo {
+        width: 17%;
+    }
+
+    select[id$="Align"]{
+        display: inline-block!important;
+        width: 65%;
+    }
+}
+
+
+/* ONLY TABLET */
+@media screen and (min-width: 576px) and (max-width: 798px) {
+    body {
+        background-color: lightgreen;
+        font-size: 1.1rem;
+    }
+
+    aside,
+    article{
+        width: 95%;
+        margin: 10px 0;
+        border: none;
+    }
+
+    img {
+        border: 3px outset green;
+        border-radius: 10px;
+        display: inline-block;
+        margin: 5px auto;
+        width: 100%;
+    }
+
+    input[type="color"] {
+        display: inline-block!important;
+        width: 50%;
+    }
+}
